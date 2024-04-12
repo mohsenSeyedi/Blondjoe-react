@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body , html {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0c0c17;
+    color: #F1F1F1FF;
+    position: relative;
+  }
+
+  *,
+  ::before,
+  ::after {
+    border-width: 0;
+    border-style: solid;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  input {
+    outline: none;
+    border: none;
+  }
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+
