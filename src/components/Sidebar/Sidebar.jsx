@@ -6,9 +6,6 @@ export default function Sidebar() {
         setIsActive(!isActive);
     };
 
-    const sidebarStyle = {
-        left: isActive ? "0" : "",
-    };
 
     const sidebarBtnStyle = {
         left: isActive ? "169px" : "",
@@ -19,7 +16,7 @@ export default function Sidebar() {
 
     return (
         <>
-            <div style={sidebarStyle} className={`sticky bg-black top-32 flex flex-col gap-4 py-4 pr-4 pl-0 w-full transition max-h-[500px] max-w-48 xl:pl-4 xl:pt-8 xl:fixed xl:-left-48 xl:z-[999] xl:min-h-screen xl:top-0`}>
+            <div  className={"sticky bg-black top-32 flex flex-col gap-4 py-4 pr-4 pl-0 w-full transition max-h-[500px] xl:fixed max-w-48 xl:pl-4 xl:pt-8 xl:-left-48 xl:z-[999]  "+ (isActive ? ' xl:left-0  xl:min-h-screen' : '')}>
                 <div className="flex flex-col gap-2">
                     <div className="flex items-center gap-4">
                         <p className="xl:ml-4">Category</p>
